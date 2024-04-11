@@ -1,0 +1,46 @@
+<div class="container">
+<h1> List of Restaurant</h1>
+
+
+<% @flats.each do |flat|  %>
+<div class= "card">
+<div class= "img">
+<p> aqui vai uma imagem</p>
+</div>
+<div = class= "inf">
+<h3> <%= flat.name %> </h3>
+<p> <%= flat.address %></p>
+<div class="inf2">
+<%= flat.price_per_night %>
+<%= flat.number_of_guests %>
+</div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+
+</div>
+
+</div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

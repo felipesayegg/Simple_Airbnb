@@ -1,0 +1,28 @@
+.card {
+  height: 250px;
+  width: calc(33.33% - 16px); /* 33.33% para ocupar um terço da largura total com uma margem entre os cards */
+  margin-right: 16px;
+  margin-top: 16px; /* Espaçamento entre os cards */
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr; /* Definindo layout padrão de três colunas */
+  grid-gap: 16px;
+  float: left; /* Para garantir que os cards se alinhem corretamente */
+
+  /* Media query para telas médias (992px) */
+  @media (max-width: 992px) {
+    width: calc(50% - 16px); /* 50% de largura para duas colunas em telas médias */
+  }
+
+  /* Media query para telas pequenas (768px) */
+  @media (max-width: 768px) {
+    width: calc(100% - 16px);
+    margin-bottom: 16px;/* 100% de largura para uma coluna em telas pequenas */
+  }
+}
+
+.inf {
+  background-color: beige;
+  padding: 10px;
+}
